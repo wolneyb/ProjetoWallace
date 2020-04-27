@@ -5,7 +5,7 @@ class Principal {
     
     static Util u = new Util();
     
-    //Intanciamos o Scanner
+    //Iniciando o Scanner
     static Scanner sc = new Scanner(System.in);
 
     //Classes das Listas/Pilhas
@@ -23,7 +23,6 @@ class Principal {
     public static void ListasApp(){
 
         boolean sair = false;
-        u.Escrever("Bem vindo ao app sobre Listas e Pilhas\n");
         
         do{
             
