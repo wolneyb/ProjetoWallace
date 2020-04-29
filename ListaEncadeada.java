@@ -77,7 +77,7 @@ public class ListaEncadeada {
                 
                 ultimoAluno = novoAluno; //Atribui o novo aluno como último
             }
-            u.Escrever("~ \""+ novoAluno.getNome() + "\" adicionado na lista!");
+            u.Escrever("--- \""+ novoAluno.getNome() + "\" adicionado na lista com sucesso!");
 
             
         } else {
@@ -130,7 +130,7 @@ public class ListaEncadeada {
                         //Atribui o ANTERIOR deste como ultimoAluno
                     }
                     
-                    u.Escrever(" "+(posicao)+" " + aux.getNome() + "REMOVIDO DA LISTA!");
+                    u.Escrever(" "+(posicao)+" " + aux.getNome() + "REMOVIDO DA LISTA COM SUCESSO!");
                     aux = null; 
                     qtdAlunos--; //Decrementa do contador.
                 }
