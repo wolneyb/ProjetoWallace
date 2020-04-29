@@ -2,19 +2,19 @@ import java.util.Scanner;
 
 public class ListaEncadeada {
 
-    // Cria a classe de Utilidade
+    // Cria a classe de utilidade para facilitar a escrita no console
     static Util u = new Util();
 
-    //Descrição da lista
+    //Descreve a lista
     Aluno primeiroAluno, ultimoAluno;
     int qtdAlunos = 0; // Inicia 0
 
     public void Iniciar(Scanner sc) {
-        u.Escrever("• LISTA ENCADEADA Pode ser infinita se tiver paciência •");
+        u.Escrever("--- Lista encadeada ---");
 
         boolean voltar = false;
         do {
-            u.Escrever("\nEscolha uma função para ser executada:\n"
+            u.Escrever("\nEscolha uma opção para executar:\n"
             + "1 - Inserir Aluno ('Nome do Aluno')\n"
             + "2 - Remover Aluno ('Posicao') \n"
             + "3 - Exibir Alunos\n"
@@ -63,7 +63,7 @@ public class ListaEncadeada {
             qtdAlunos++; //Incrementa a quantidade de Alunos
             
             if (primeiroAluno == null){
-                //Define esse como primeiro e ultimo aluno, se não houver nenhum.
+                //Define esse como primeiro e ultimo aluno, caso não houver nenhum.
                 
                 primeiroAluno = novoAluno;
                 ultimoAluno = novoAluno;
@@ -86,7 +86,7 @@ public class ListaEncadeada {
         
     }
 
-    //Removendo elementos.
+    //Para remover elementos.
     public void RemoverElemento(Scanner sc){
         u.Escrever("POSICAO:");
         int posicao = Integer.parseInt(sc.nextLine());
@@ -139,7 +139,7 @@ public class ListaEncadeada {
         }
     }
 
-    //Exibindo elementos.
+    //Para exibir elementos.
     public void ExibirElementos(){
         u.Escrever("---- LISTA ----");
         Aluno aux = primeiroAluno;
