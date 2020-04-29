@@ -76,7 +76,7 @@ public class PilhaEncadeada {
             }
 
             qtdAlunos++; //Incrementa a quantidade de Alunos
-            u.Escrever("~ \""+ novoAluno.getNome() + "\" adicionado na lista!");
+            u.Escrever("--- \""+ novoAluno.getNome() + "\" adicionado na lista com sucesso!");
 
             
         } else {
@@ -91,7 +91,7 @@ public class PilhaEncadeada {
         if(qtdAlunos == 0){
             u.Escrever("~ Não temos ninguém na pilha.");
         } else {
-            u.Escrever("~ Aluno \""+ ultimoAluno.getNome() + "\" na posicao "+ qtdAlunos  +" removido!");
+            u.Escrever("--- Aluno \""+ ultimoAluno.getNome() + "\" na posicao "+ qtdAlunos  +" removido com sucesso!");
             ultimoAluno = ultimoAluno.getAnterior();
             if(qtdAlunos > 1){
                 ultimoAluno.setProximo(null);
