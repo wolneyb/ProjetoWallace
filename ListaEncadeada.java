@@ -152,7 +152,7 @@ public class ListaEncadeada {
             if(i < qtdAlunos)
                 aux = aux.getProximo();
         }
-        u.Escrever("---------------");
+       
 
     }
 
