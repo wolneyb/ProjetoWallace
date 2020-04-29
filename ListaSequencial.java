@@ -54,7 +54,7 @@ public class ListaSequencial {
         int posicao = Integer.parseInt(sc.nextLine());
 
         if(posicao > 10 || posicao < 1){
-            u.Escrever("~ Só temos 10 posições. Use um valor válido de 1 a 10!");
+            u.Escrever("--- Só existem 10 posições. Utilize um valor entre 1 e 10!");
         } else {
 
             u.Escrever("NOME:");
@@ -69,10 +69,10 @@ public class ListaSequencial {
                 //E joga esse aluno no Array
                 alunos[posicao - 1] = novoAluno;
 
-                u.Escrever("~ \""+ novoAluno.getNome()+"\" adicionado na posicao "+posicao+"");
+                u.Escrever("--- \""+ novoAluno.getNome()+"\" adicionado na posicao "+posicao+"");
 
             } else {
-                u.Escrever("~ Vazio não é valido!");
+                u.Escrever("Vazio inválido!");
             }
         }
     }
@@ -83,11 +83,11 @@ public class ListaSequencial {
         int posicao = Integer.parseInt(sc.nextLine());
 
         if(posicao > 10 || posicao < 1){
-            u.Escrever("~ Só temos 10 posições. Use um valor válido de 1 a 10!");
+            u.Escrever("--- Só existem 10 posições. Utilize um valor entre 1 e 10!");
         } else if(alunos[posicao - 1] == null){
             u.Escrever("~ Não tem ninguém nessa posição!");
         } else {
-            u.Escrever("~ Aluno \""+ alunos[posicao-1].getNome() +"\" na posicao "+posicao+" removido!");
+            u.Escrever("--- Aluno \""+ alunos[posicao-1].getNome() +"\" na posicao "+posicao+" removido com sucesso!");
             alunos[posicao - 1] = null;
         }
     }
