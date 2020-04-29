@@ -21,7 +21,7 @@ public class ListaEncadeada {
             + "4 - Voltar\n");
             
             String entrada;
-            u.Escrever("FUNCAO:");
+            u.Escrever("FUNÇÃO:");
             entrada = sc.nextLine();
 
             switch (entrada) {
